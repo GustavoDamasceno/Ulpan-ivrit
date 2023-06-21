@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Los fonemas - Ulpan Ivrit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Online Hebrew keyboard to type a text with the Hebrew script">
+<meta name="Keywords" content="hebrew,alphabet,keyboard,online,virtual">
+<meta property="og:image" content="https://www.lexilogos.com/images/babel_bruegel.jpg">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="alternate" type="application/rss+xml" title="Lexilogos" href="../rss.xml">
+<link rel="stylesheet" type="text/css" href="Style/style.css">
+
+<!-- javascript -->
+<script src="Script/script.js"></script>
+
+</head>
+<body onLoad="conversion.saisie.focus()">
+<div class="ca">
+  <img src="Imagem/ki.png" style="max-width: auto; height: auto;">
+</div>
+ 
+
+<div class="center"> 
+<noscript>
+<span class="span-red">Ative o JavaScript no seu navegador! <a class="ext" href="https://www.enable-javascript.com/" target="_blank">instrução</a>.<br><br>
+</noscript>
+<br>
+<form name="conversion">
+<div class="delc"> 
+<br>
+<input type="button" class="eff" title="clear" onClick="reset();conversion.saisie.focus()" value="">
+</div>
+<textarea name="saisie" id="bar" onKeyUp="transcrire()" rows="4" class="cadr"></textarea>
+<br>
+<br>
+<input type="button" class="bf" data-clipboard-action="copy" data-clipboard-target="#bar" value="Copiar">
+<script src="Script/copy.js"></script>
+
+<input type="button" class="bf" onClick="transliterar()" value="Transcribir">
+<input type="button" class="bf" onClick="limparTexto()" value="Borrar">
+
+<script src="Script/Transcribir.js"></script>
+
+<input type="button" class="bf" onClick="alpha(' ')" value="Space">
+<div class="espc"></div>
+<div class="rtl">
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="aleph" onclick="alpha('א')" value="א"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="veth" onclick="alpha('ב')" value="ב"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="gimel" onclick="alpha('ג')" value="ג"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="dalet" onclick="alpha('ד')" value="ד"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="he" onclick="alpha('ה')" value="ה"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="vav" onclick="alpha('ו')" value="ו"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="zayin" onclick="alpha('ז')" value="ז"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="het" onclick="alpha('ח')" value="ח"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="tet" onclick="alpha('ט')" value="ט"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="yod" onclick="alpha('י')" value="י"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="khaf" onclick="alpha('כ')" value="כ"><p><input type="button" class="bt" onclick="alpha('ך')" value="ך"></p></div>
+<div class="esp mobnul"></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="lamed" onclick="alpha('ל')" value="ל"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="mem" onclick="alpha('מ')" value="מ"><p><input type="button" class="bt" onclick="alpha('ם')" value="ם"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="nun" onclick="alpha('נ')" value="נ"><p><input type="button" class="bt" onclick="alpha('ן')" value="ן"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="samekh" onclick="alpha('ס')" value="ס"> </p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="ayin" onclick="alpha('ע')" value="ע"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="fe" onclick="alpha('פ')" value="פ"><p><input type="button" class="bt" onclick="alpha('ף')" value="ף"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="tsadi" onclick="alpha('צ')" value="צ"><p><input type="button" class="bt" onclick="alpha('ץ')" value="ץ"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="qof" onclick="alpha('ק')" value="ק"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="resh" onclick="alpha('ר')" value="ר"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="shin" onclick="alpha('ש')" value="שׁ"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="sin" onclick="alpha('שׂ')" value="שׂ"></p></div>
+<div class="as v">&nbsp;<br><p><input type="button" class="bt" title="tav" onclick="alpha('ת')" value="ת"></p></div>
+</div>
+<div class="esp"></div>
+<div class="as"><p><input type="button" class="bt" title="sheva" onclick="alpha('ְ')" value="ְ"></p></div>
+<div class="as"><p><input type="button" class="bt" title="hataf segol" onclick="alpha('ֱ')" value="ֱ"></p></div>
+<div class="as"><p><input type="button" class="bt" title="hataf patah" onclick="alpha('ֲ')" value="ֲ"></p></div>
+<div class="as"><p><input type="button" class="bt" title="hataf qamats" onclick="alpha('ֳ')" value="ֳ"></p></div>
+<div class="as"><p><input type="button" class="bt" title="hiriq" onclick="alpha('ִ')" value="ִ"></p></div>
+<div class="as"><p><input type="button" class="bt" title="tsere" onclick="alpha('ֵ')" value="ֵ"></p></div>
+<div class="as"><p><input type="button" class="bt" title="segol" onclick="alpha('ֶ')" value="ֶ"></p></div>
+<div class="as"><p><input type="button" class="bt" title="patah" onclick="alpha('ַ')" value="ַ"></p></div>
+<div class="as"><p><input type="button" class="bt" title="qamats" onclick="alpha('ָ')" value="ָ"></p></div>
+<div class="as"><p><input type="button" class="bt" title="holam" onclick="alpha('ֹ')" value="ֹ"></p></div>
+<div class="as"><p><input type="button" class="bt" title="qubuts" onclick="alpha('ֻ')" value="ֻ"></p></div>
+<div class="as"><p><input type="button" class="bt" title="dagesh" onclick="alpha('ּ')" value="ּ"></p></div>
+<div class="as"><p><input type="button" class="bt" onclick="alpha('וֹ')" value="וֹ"></p></div>
+<div class="as"><p><input type="button" class="bt" onclick="alpha('וּ')" value="וּ"></p></div>
+
+
+</body>
+</html>
